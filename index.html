@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sparc | Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/sparc.css">
+</head>
+<body>
+    
+
+    <div class="sparc-container">
+        <!-- Music Details -->
+        <div class="img-container">
+            <img src="https://images.pexels.com/photos/7464825/pexels-photo-7464825.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Album Art">
+        </div>
+
+        <div class="music-details">
+            <h2 class="music-title">Music Title</h2>
+            <h3 class="music-artist">Music Artist</h3>
+        </div>
+
+        <audio src="https://usa1-vn.mixstream.net/8010/listen.mp3" id="sparc-player"></audio>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div class="progress" id="progress">
+                <span class="progress-position" id="progress-position"></span>
+            </div>
+
+            <div class="progress-duration">
+                <span id="current-time">0:00</span>
+                <span id="duration">4:18</span>
+            </div>
+        </div>
+
+        <!-- Music Controls -->
+        <div class="player-controls">
+            <button class="prev" id="sparc-control-prev"> < </button>
+            <button class="play" id="sparc-control-play"> Play </button>
+            <button class="next" id="sparc-control-next"> > </button>
+        </div>
+    </div>
+
+
+    <script src="js/sparc.js"></script>
+</body>
+</html>
